@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="section_navebar.css">
+    <link rel="stylesheet" href="inner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Pasta-vendor</title>
+    <style>
+        .image1 {
+
+            float: left;
+            width: 30%;
+            height: 400px;
+            margin-left: 150px;
+            background: white;
+            padding: 3px;
+        }
+
+        .image2 {
+            float: left;
+            width: 15%;
+            height: 400px;
+
+            background: white;
+            padding: 3px;
+        }
+
+        .image3 {
+            float: left;
+            width: 15%;
+            height: 400px;
+
+            background: white;
+            padding: 3px;
+        }
+
+        .image4 {
+            float: left;
+            width: 20%;
+            height: 400px;
+            background: white;
+            padding: 3px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .blur img {
+            opacity: 0.5;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: black;
+        }
+
+        .gallery {
+            margin-top: 40px;
+        }
+
+
+        .badge {
+            font-size: large;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .retro h2 {
+            font-size: 25px;
+            color: rgb(114, 112, 112);
+        }
+
+        .retro {
+            padding: 0px;
+            clear: both;
+            margin-left: 150px;
+        }
+
+        .btn_delivery {
+            position: relative;
+            left: 40%;
+            border-radius: 10px;
+            height: 40px;
+            background-color: aquamarine;
+
+        }
+
+        .btn_dining {
+            position: relative;
+            left: 40%;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(118, 241, 124);
+            margin-left: 150px;
+
+        }
+
+        .dire {
+            position: relative;
+            border-radius: 5px;
+            height: 30px;
+            background-color: aqua;
+            margin-left: 150px;
+
+        }
+
+        .share {
+            position: relative;
+            
+            border-radius: 5px;
+            height: 30px;
+            background-color: rgb(223, 125, 14);
+
+        }
+
+        .ordernow {
+            position: relative;
+           
+            border-radius: 5px;
+            height: 30px;
+            background-color: rgb(58, 175, 22);
+
+        }
+
+
+
+        .burg_menu {
+            margin-top: 500px;
+
+            position: relative;
+            clear: both;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!--Section nav bar-->
+
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+
+            <ul>
+                <!-- <li><a href="#Home">Home</a></li> -->
+
+                <li><a href="#Menu">Food</a></li>
+                <li><a href="#food">Food's Near You</a></li>
+                <li><a href="#restaurant">Restaurant Near You</a></li>
+                <li><a href="#About">About</a></li>
+                
+                <li><input type="text" list="input_1" placeholder="Choose location"></li>
+
+            </ul>
+
+        </nav>
+        <datalist id="input_1">
+            <option value="Vidhyadhar Nagar"></option>
+            <option value="Mansarovar"></option>
+            <option value="Kukas"></option>
+            <option value="Jhotwara"></option>
+            <option value="RajaPark"></option>
+
+        </datalist>
+
+
+    </section>
+
+
+
+    <section>
+
+        <!--Section Gallary-->
+        <section class="gallery">
+            <div class="image1">
+                <div>
+                    <img src="image/pasta.jpg" width="100%" height="400px">
+                </div>
+            </div>
+
+            <div class="image2">
+                <div>
+                    <img src="image/pasta4.jpg" width="100%" height="400px">
+                </div>
+            </div>
+
+            <div class="image3">
+                <div>
+                    <img src="image/pasta3.jpg" width="100%" height="400px">
+                </div>
+            </div>
+
+            <div class="image4">
+                <div class="blur">
+                    <a href="Viewall_pasta.html"><img src="image/pasta2.jpg" alt="" width="100%" height="400px"></a>
+                    <div class="centered">View All</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Section Vendor Details-->
+        <section>
+
+            <div class="retro" style="clear: both;">
+                <h1>FPF cafe
+                    <button type="button" class="btn_dining">Dining Reviews <span class="badge">7/10
+                            &star;</span></button>
+                    <button type="button" class="btn_delivery">Delivery Reviews <span class="badge">9/10
+                            &starf;</span></button>
+                </h1>
+
+                <h2>Vidhyadhar Nagar, Jaipur</h2>
+            </div>
+            <a href="https://goo.gl/maps/AwyCbsEMZuTfk4XM6"><button type="button" class="dire">Direction<span
+                        class="badge">&NestedGreaterGreater;</span></button> </a>
+            <a href="https://www.zomato.com/jaipur/momotoko-bais-godam/order"><button type="button"
+                    class="share">Share  <i class="fa fa-share-alt"></i><span class="badge"></span></button> </a>
+            <a href="https://www.zomato.com/jaipur/momotoko-bais-godam/order"><button type="button"
+                    class="ordernow">Order NOW<span class="badge"></span></button> </a>
+
+            <p>
+            <h2 style="margin-left: 150px;">Availble : {Online} {Offline}</h2>
+
+            </p>
+        </section>
+
+
+
+
+    </section>
+
+    <!--Section Menu -->
+     <!--Burger code-->
+     <section class="burg_menu" >
+     <!--pasta code-->
+
+     <div class="menu" id="Menu">
+        <h1><span>Pasta's</span></h1>
+  
+        <div class="menu_box">
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                   <img src="image/pasta1.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Masala Pasta</h2>
+                    <h3>
+                     50% off up to 100
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">3.2</a> -->
+                    
+
+                    
+                </div>
+  
+            </div> 
+            
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta2.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>White Souce Pasta</h2>
+                    <h3>
+                      50% off up to one
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">3.9</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta3.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Tomato Pasta</h2>
+                    <h3>
+                      50% off up to one
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">3.8</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta4.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Sauce Pasta</h2>
+                    <h3>
+                      50% off up to one
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">4.2</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta5.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Red Souce Pasta</h2>
+                    <h3>
+                      50% off up to one
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">4.3</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta6.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Tomato Basil Pasta</h2>
+                    <h3>
+                      60% off up to two
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">3.7</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pasta3.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Tomato Pasta</h2>
+                    <h3>
+                      50% off up to one 
+                    </h3>
+                    <h3> &#8377; 150 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">3.9</a> -->
+
+                    
+                    </a>
+                </div>
+  
+            </div> 
+  
+  
+            <div class="menu_card">
+  
+                <div class="menu_image">
+                    <img src="image/pizza2.jpg">
+                </div>
+  
+                <!-- <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div> -->
+  
+                <div class="menu_info">
+                    <h2>Souce Pasta</h2>
+                    <h3>
+                      50% off up to
+                    </h3>
+                    <h3> &#8377; 99 for one</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <!-- <a href="#" class="menu_btn">4.0</a> -->
+
+                    
+                </div>
+  
+            </div> 
+  
+           
+            
+            
+        </div>
+  
+    </div> 
+
+</section>
+
+
+
+
+</body>
+
+</html>

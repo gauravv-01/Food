@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>customer Registration page</title>
+</head>
+
+<style>
+    button {
+        background-color: #1505ff;
+        width: 100% color:rgb(248, 248, 248);
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=number] {
+        width: 100%;
+        margin: 8px 0px;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid rgb(109, 8, 240) box-sizing:border-box;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <h1 style="text-align:center;">Registration Form</h1>
+    <form style="border: 3px solid #f1f1f1;">
+        <div style="padding:25px; background-color:lightblue">
+            <label>Vendor Name: </label>
+            <input type="text" placeholder="Vendor Name" name="user name" required>
+            <br>
+            <label>Shop Name: </label>
+            <input type="text" placeholder="Shop Name" name="user name" required>
+            <br>
+            <label>Email: </label>
+            <input type="email" placeholder="Email" name="email">
+            <br>
+            <label> Phone :</label>
+            <input type="number" placeholder="Phone number" name="number">
+            <br>
+            <label>Address:-</label>
+            <textarea class="form-control" cols="20" id="strCorrespondenceAddress" name="strCorrespondenceAddress"
+                rows="5"></textarea>
+            <br><br>
+
+
+            <!--- India states -->
+            <label>Choose State</label>
+            <select id="country-state" name="country-state">
+                <option value="">Select state</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LA">Ladakh</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+            </select>
+            <br><br>
+
+            <!--- India states -->
+            <label>Menu:-</label>
+            <select id="country-state" name="country-state"multiple>
+                <option value="Burger">Burger</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Chowmien">chowmien</option>
+                <option value="Sandwich">Sandwich</option>
+                <option value="Pestri">Pestri</option>
+                <option value="Samosa">Samosa</option>
+                <option value="Pani Puri">Pani Puri</option>
+                <option value="Fried Chiken">Fried Chiken</option>
+                <option value="Breads">Breads</option>
+                <option value="Hot Dog">Hot Dog</option>
+                <option value="Cutlet">Cutlet</option>
+                <option value="Patties">Patties</option>
+                <option value="Momos">Momos</option>
+                <option value="Macronics">Macronics</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Panir Roll">Panir Roll</option>
+                <option value="Pakoda">Pakoda</option>
+                <option value="Pav-Bhaji">Pav-Bhaji</option>
+                <option value="Spring Roll">spring Rolls</option>
+                <option value="Cheeseburger">Cheeseburger</option>
+                <option value="Milkshake">Milkshake</option>
+                <option value="Muffin">muffin</option>
+                <option value="Donuts">Donuts</option>
+                <option value="Onion Ring">Onion Ring</option>
+                <option value="Noodle">Noodle</option>
+                <option value="Lassi">Lassi</option>
+                <option value="Vadda Pav">Vadda Pav</option>
+                <option value="Tikiya">Tikiya</option>
+                
+            </select>
+            <br><br>
+
+            <!--District-->
+            <label for="cars">Choose District:</label>
+
+            <select id="cars">
+                <option value="volvo">Jaipur</option>
+                <option value="saab">Dudu</option>
+                <option value="opel">Ajmer</option>
+                <option value="audi">Udaipur</option>
+            </select><br><br>
+            Gender:
+            <br>
+            <input type="radio" name="male:">Male
+            <input type="radio" name="Female"> Female
+            <br><br>
+            Proof:
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile"><br><br>
+            <!-- <input type="submit" value="Submit"><br> -->
+            <button type="submit">Register</button>
+
+
+
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>
+<!-- 
+        <option value="AP">Burger</option>
+        <option value="AR">Pizza</option>
+        <option value="AS">Chowmien</option>
+        <option value="BR">Sandwich</option>
+        <option value="CH">Pestri</option>
+        <option value="CT">Samosa</option>
+        <option value="DL">Pani Puri</option>
+        <option value="GA">Fried Chiken</option>
+        <option value="GJ">Breads</option>
+        <option value="HR">Hot Dog</option>
+        <option value="HP">Cutlet</option>
+        <option value="JK">Patties</option>
+        <option value="JH">Momoj</option>
+        <option value="KA">Macronics</option>
+        <option value="KL">Pasta</option>
+        <option value="LA">Panir Roll</option>
+        <option value="LD">Pakoda</option>
+        <option value="MP">Pav-Bhaji</option>
+        <option value="MH">Spring Roll</option>
+        <option value="MN">Cheeseburger</option>
+        <option value="ML">Milkshake</option>
+        <option value="MZ">Muffin</option>
+        <option value="NL">Donuts</option>
+        <option value="OR">Onion Ring</option>
+        <option value="PY">Noodle</option>
+        <option value="PB">Lassi</option>
+        <option value="RJ">Vadda Pav</option>
+        <option value="SK">Tikiya</option> -->
